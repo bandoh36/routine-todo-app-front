@@ -1,30 +1,26 @@
-import Typography from "@mui/material/Typography";
+import Typography from '@mui/material/Typography';
 
 export const WORK_CONTENT_PORTFOLIO = {
-  title: "Portfolio（当サイト）",
-  image: { src: "/image/work/portfolio.jpg", alt: "portfolio" },
+  title: 'Portfolio（当サイト）',
+  image: { src: '/image/work/portfolio.jpg', alt: 'portfolio' },
   description: (
     <Typography typography="Noto2">
-      転職活動時に作成していたポートフォリオサイトを、
-      デザインから見直し実装しなおしたものです。
-      基本的にフロントエンドの知識のみで作成しており、
-      レスポンシブデザインを採用しております。
+      転職活動時に作成していたポートフォリオサイトを、 デザインから見直し実装しなおしたものです。
+      基本的にフロントエンドの知識のみで作成しており、 レスポンシブデザインを採用しております。
       <br />
       <br />
-      SIerではあまりコードを書いていませんでしたが、
-      それでもガッツリ開発するベンチャーに転職できたのは、
-      このようなサイトを作っていたことも要因の一つだと思っています。
-      せっかく作ったので、アニメーション追加するなど今後も更新します。
+      SIerではあまりコードを書いていませんでしたが、 それでもガッツリ開発するベンチャーに転職できたのは、
+      このようなサイトを作っていたことも要因の一つだと思っています。 せっかく作ったので、アニメーション追加するなど今後も更新します。
     </Typography>
   ),
-  link: "",
+  link: '',
   modalDescription: {
-    front: "JavaScript、TypeScript、React、Next.js、MaterialUI",
-    back: "なし",
-    infra: "AWSAmplify、CloudFront",
+    front: 'JavaScript、TypeScript、React、Next.js、MaterialUI',
+    back: 'なし',
+    infra: 'AWSAmplify、CloudFront',
     source: {
-      text: "https://github.com/bandoh36/next-ts-app",
-      src: "https://github.com/bandoh36/next-ts-app",
+      text: 'https://github.com/bandoh36/next-ts-app',
+      src: 'https://github.com/bandoh36/next-ts-app',
     },
     other: (
       <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
@@ -46,29 +42,26 @@ export const WORK_CONTENT_PORTFOLIO = {
 };
 
 export const WORK_CONTENT_BLOG = {
-  title: "Blog",
-  image: { src: "/image/work/blog.jpg", alt: "blog" },
+  title: 'Blog',
+  image: { src: '/image/work/blog.jpg', alt: 'blog' },
   description: (
     <Typography typography="Noto2">
-      学んだことを発信できたらいいな、という思いで作成したブログです。
-      EC2にて立てたWebサーバにWordpressを導入しています。
-      アップロードした画像はS3に保存されるようにしており、
-      Webサーバの負荷を考慮した設計になっております。
+      学んだことを発信できたらいいな、という思いで作成したブログです。 EC2にて立てたWebサーバにWordpressを導入しています。
+      アップロードした画像はS3に保存されるようにしており、 Webサーバの負荷を考慮した設計になっております。
       <br />
       <br />
-      いろいろやりたいことが多くまだサンプルの段階ですが、
-      学習した内容や作成したアプリケーションなどなど、
+      いろいろやりたいことが多くまだサンプルの段階ですが、 学習した内容や作成したアプリケーションなどなど、
       少しずつ更新していこう、と半年くらい思っています。
     </Typography>
   ),
-  link: "https://akisute36.com/",
+  link: 'https://akisute36.com/',
   modalDescription: {
-    front: "なし",
-    back: "なし（Wordpress）",
-    infra: "EC2、S3、CloudFront",
+    front: 'なし',
+    back: 'なし（Wordpress）',
+    infra: 'EC2、S3、CloudFront',
     source: {
-      text: "なし",
-      src: "",
+      text: 'なし',
+      src: '',
     },
     other: (
       <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>

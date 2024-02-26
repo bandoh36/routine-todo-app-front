@@ -1,4 +1,4 @@
-import HomeTemp from "@/components/templates/HomeTemp";
+import HomeTemp from '@/components/templates/HomeTemp';
 
 const Home = () => {
   return <HomeTemp />;

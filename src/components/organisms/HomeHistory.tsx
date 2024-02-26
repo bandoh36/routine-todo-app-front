@@ -1,11 +1,8 @@
-import Box from "@mui/material/Box";
+import Box from '@mui/material/Box';
 
-import HistoryCardLeftImage from "@/components/molecules/HistoryCardLeftImage";
-import HistoryCardRightImage from "@/components/molecules/HistoryCardRightImage";
-import {
-  HISTORY_CARD_CONTENT_SIER,
-  HISTORY_CARD_CONTENT_VENTURE,
-} from "@/constant/historyConstant";
+import HistoryCardLeftImage from '@/components/molecules/HistoryCardLeftImage';
+import HistoryCardRightImage from '@/components/molecules/HistoryCardRightImage';
+import { HISTORY_CARD_CONTENT_SIER, HISTORY_CARD_CONTENT_VENTURE } from '@/constant/historyConstant';
 
 const HomeHistory = () => {
   const historyCardContentSIer = HISTORY_CARD_CONTENT_SIER;
@@ -13,9 +10,9 @@ const HomeHistory = () => {
 
   return (
     <Box
-      alignItems={"center"}
+      alignItems={'center'}
       sx={{
-        width: { xs: "95vw", md: "1100px" },
+        width: { xs: '95vw', md: '1100px' },
       }}
     >
       <Box sx={{ mt: 0 }}>

@@ -1,11 +1,11 @@
-import Box from "@mui/material/Box";
+import Box from '@mui/material/Box';
 
-import SkillsetList from "@/components/molecules/SkillsetList";
+import SkillsetList from '@/components/molecules/SkillsetList';
 
 const HomeSkillset = () => {
   return (
     <Box
-      alignItems={"flex-start"}
+      alignItems={'flex-start'}
       sx={
         {
           // width: { xs: "100vw", md: "1100px" },

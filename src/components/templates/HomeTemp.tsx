@@ -1,11 +1,11 @@
-import { useState, SyntheticEvent } from "react";
+import { useState, SyntheticEvent } from 'react';
 
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
-import HomeContent from "@/components/organisms/HomeContent";
-import HomeNavigationTab from "@/components/organisms/HomeNavigationTab";
+import HomeContent from '@/components/organisms/HomeContent';
+import HomeNavigationTab from '@/components/organisms/HomeNavigationTab';
 
 const HomeTemp = () => {
   const [tabValue, setTabValue] = useState(0);
@@ -17,10 +17,10 @@ const HomeTemp = () => {
     <Grid container justifyContent="center" sx={{ pb: 15 }}>
       <Box
         sx={{
-          width: "100%",
-          height: { xs: "65px", md: "100px" },
-          display: "flex",
-          justifyContent: { xs: "center", md: "flex-start" },
+          width: '100%',
+          height: { xs: '65px', md: '100px' },
+          display: 'flex',
+          justifyContent: { xs: 'center', md: 'flex-start' },
           mt: { xs: 10, md: 15 },
           ml: { md: 15 },
         }}
@@ -31,12 +31,12 @@ const HomeTemp = () => {
       </Box>
       <Box
         sx={{
-          display: "flex",
-          width: "100%",
-          height: { xs: "5px", md: "50px" },
-          alignItems: { xs: "center", md: "flex-end" },
-          justifyContent: { xs: "center", md: "flex-end" },
-          pr: { sx: 0, md: "30px" },
+          display: 'flex',
+          width: '100%',
+          height: { xs: '5px', md: '50px' },
+          alignItems: { xs: 'center', md: 'flex-end' },
+          justifyContent: { xs: 'center', md: 'flex-end' },
+          pr: { sx: 0, md: '30px' },
           mb: { sx: 2, md: 5 },
         }}
       >

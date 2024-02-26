@@ -1,10 +1,10 @@
-import { ThemeProvider } from "@mui/material";
-import { CssBaseline } from "@mui/material";
-import { AppProps } from "next/app";
-import Head from "next/head";
+import { ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
+import { AppProps } from 'next/app';
+import Head from 'next/head';
 
-import CustomTheme from "@/styles/CustomTheme";
-import "@/styles/global.css";
+import CustomTheme from '@/styles/CustomTheme';
+import '@/styles/global.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

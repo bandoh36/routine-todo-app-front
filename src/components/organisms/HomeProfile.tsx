@@ -1,48 +1,43 @@
-import { Link as MuiLink } from "@mui/material";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Image from "next/image";
+import { Link as MuiLink } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 
-import { PROFILE_CONTENT } from "@/constant/profileConstant";
+import { PROFILE_CONTENT } from '@/constant/profileConstant';
 
 const HomeProfile = () => {
   const profileContent = PROFILE_CONTENT;
   return (
     <Box
-      alignItems={"center"}
+      alignItems={'center'}
       sx={{
-        width: { xs: "95vw", md: "1300px" },
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        width: { xs: '95vw', md: '1300px' },
+        display: 'flex',
+        flexDirection: { xs: 'column', md: 'row' },
       }}
     >
       <Box
         sx={{
-          width: { xs: "100%", md: "600px" },
-          height: { xs: "300px", md: "400px" },
-          borderRadius: "10px",
-          boxShadow: "3",
-          overflow: "hidden",
-          position: "relative",
+          width: { xs: '100%', md: '600px' },
+          height: { xs: '300px', md: '400px' },
+          borderRadius: '10px',
+          boxShadow: '3',
+          overflow: 'hidden',
+          position: 'relative',
           mr: { md: 5 },
         }}
       >
-        <Image
-          src={profileContent.image.src}
-          alt={profileContent.image.alt}
-          fill
-          style={{ objectFit: "cover" }}
-        />
+        <Image src={profileContent.image.src} alt={profileContent.image.alt} fill style={{ objectFit: 'cover' }} />
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", md: "800px" },
-          height: { xs: "100%", md: "400px" },
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
+          width: { xs: '100%', md: '800px' },
+          height: { xs: '100%', md: '400px' },
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
           border: { xs: 0, md: 1 },
-          borderRadius: "15px",
+          borderRadius: '15px',
           p: 7,
         }}
       >

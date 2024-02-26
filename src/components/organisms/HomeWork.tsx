@@ -1,10 +1,7 @@
-import Box from "@mui/material/Box";
+import Box from '@mui/material/Box';
 
-import WorkCard from "@/components/molecules/WorkCard";
-import {
-  WORK_CONTENT_BLOG,
-  WORK_CONTENT_PORTFOLIO,
-} from "@/constant/workConstant";
+import WorkCard from '@/components/molecules/WorkCard';
+import { WORK_CONTENT_BLOG, WORK_CONTENT_PORTFOLIO } from '@/constant/workConstant';
 
 const HomeWork = () => {
   const workContentPortfolio = WORK_CONTENT_PORTFOLIO;
@@ -12,9 +9,9 @@ const HomeWork = () => {
 
   return (
     <Box
-      alignItems={"center"}
+      alignItems={'center'}
       sx={{
-        width: { xs: "95vw", md: "1100px" },
+        width: { xs: '95vw', md: '1100px' },
       }}
     >
       <WorkCard content={workContentPortfolio} />

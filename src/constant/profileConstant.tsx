@@ -1,7 +1,7 @@
-import Typography from "@mui/material/Typography";
+import Typography from '@mui/material/Typography';
 
-import { StartDate } from "@/lib/common/getYears";
-import { getYears } from "@/lib/common/getYears";
+import { StartDate } from '@/lib/common/getYears';
+import { getYears } from '@/lib/common/getYears';
 
 // 年齢計算用誕生日情報
 export const BIRTHDAY: StartDate = {
@@ -18,13 +18,13 @@ export const WORKING_STARTDATE: StartDate = {
 };
 
 export const PROFILE_CONTENT = {
-  image: { src: "/image/profile/hakata.jpg", alt: "hakata" },
+  image: { src: '/image/profile/hakata.jpg', alt: 'hakata' },
   profile: (
     <>
       <Typography typography="Noto1">Akisute（あきすて）</Typography>
       <Typography typography="Noto2">
-        {getYears(BIRTHDAY, "birthday")}歳、社会人
-        {getYears(WORKING_STARTDATE, "work")}年目
+        {getYears(BIRTHDAY, 'birthday')}歳、社会人
+        {getYears(WORKING_STARTDATE, 'work')}年目
       </Typography>
       <Typography typography="Noto2">
         2019年保険系SIerに就職。

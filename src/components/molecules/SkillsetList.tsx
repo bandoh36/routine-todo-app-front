@@ -1,15 +1,15 @@
-import * as React from "react";
+import * as React from 'react';
 
-import Box from "@mui/material/Box";
-import Rating from "@mui/material/Rating";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Typography from "@mui/material/Typography";
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Typography from '@mui/material/Typography';
 
-import { SKILLSET_CONTENT } from "@/constant/skillsetConstant";
+import { SKILLSET_CONTENT } from '@/constant/skillsetConstant';
 
 export interface MainSkillsetContentProps {
   id: string;
@@ -29,27 +29,27 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
   return (
     <Box
       sx={{
-        width: { xs: "95vw", md: "1100px" },
-        maxWidth: { xs: "1200px" },
-        backgroundColor: "white",
-        borderRadius: "10px",
-        boxShadow: "3",
+        width: { xs: '95vw', md: '1100px' },
+        maxWidth: { xs: '1200px' },
+        backgroundColor: 'white',
+        borderRadius: '10px',
+        boxShadow: '3',
         p: 6,
         mb: 6,
         mx: { xs: 0, md: 6 },
-        overflow:"auto"
+        overflow: 'auto',
       }}
     >
       <Box>
         <Typography typography="h6" color="primary">
-          {id === "qualification" && "資格"}
-          {id === "front" && "フロントエンド"}
-          {id === "back" && "バックエンド"}
-          {id === "other" && "その他"}
+          {id === 'qualification' && '資格'}
+          {id === 'front' && 'フロントエンド'}
+          {id === 'back' && 'バックエンド'}
+          {id === 'other' && 'その他'}
         </Typography>
         <Table>
           <TableHead>
-            {id === "qualification" && "資格" ? (
+            {id === 'qualification' && '資格' ? (
               <TableRow>
                 <TableCell width="50%"></TableCell>
                 <TableCell width="50%"></TableCell>
@@ -74,7 +74,7 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
                 <TableCell>
                   <Typography typography="Noto3">{row.tech}</Typography>
                 </TableCell>
-                {id === "qualification" && "資格" ? (
+                {id === 'qualification' && '資格' ? (
                   <></>
                 ) : (
                   <TableCell>

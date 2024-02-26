@@ -9,15 +9,11 @@ export const getYears = (startDate: StartDate, type: string): number => {
   const today = new Date();
 
   //今年の開始日
-  const thisYearsStartDate = new Date(
-    today.getFullYear(),
-    startDate.month - 1,
-    startDate.date
-  );
+  const thisYearsStartDate = new Date(today.getFullYear(), startDate.month - 1, startDate.date);
 
   let years = today.getFullYear() - startDate.year;
 
-  if (type !== "birthday") {
+  if (type !== 'birthday') {
     years++;
   }
 

@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles';
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface TypographyVariants {
     Dot1: React.CSSProperties;
     Inter1: React.CSSProperties;
@@ -27,7 +27,7 @@ declare module "@mui/material/styles" {
 }
 
 // Update the Typography's variant prop options
-declare module "@mui/material/Typography" {
+declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     Dot1: true;
     Inter1: true;
@@ -49,11 +49,11 @@ const CustomTheme = createTheme({
   },
 
   palette: {
-    mode: "light",
+    mode: 'light',
     primary: {
-      main: "#0288d1",
-      light: "#ffa2a3",
-      dark: "#a34449",
+      main: '#0288d1',
+      light: '#ffa2a3',
+      dark: '#a34449',
     },
   },
 
@@ -63,10 +63,9 @@ const CustomTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          height: "100vh",
-          background:
-            "linear-gradient(135deg, rgba(140,130,255, 0.45), rgba(255,255,255, 0))",
-          backgroundAttachment: "fixed",
+          height: '100vh',
+          background: 'linear-gradient(135deg, rgba(140,130,255, 0.45), rgba(255,255,255, 0))',
+          backgroundAttachment: 'fixed',
           m: 0,
         },
       },
@@ -75,46 +74,46 @@ const CustomTheme = createTheme({
 });
 
 CustomTheme.typography.Dot1 = {
-  color: "white",
-  fontFamily: "DotGothic16, sans-serif",
+  color: 'white',
+  fontFamily: 'DotGothic16, sans-serif',
   fontSize: 40,
   fontWeight: 900,
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
+  [CustomTheme.breakpoints.up('md')]: { fontSize: 50 },
 };
 
 CustomTheme.typography.Inter1 = {
-  color: "black",
+  color: 'black',
   fontFamily: "'Inter', sans-serif",
   fontSize: 30,
   fontWeight: 100,
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
+  [CustomTheme.breakpoints.up('md')]: { fontSize: 50 },
 };
 
 CustomTheme.typography.Noto1 = {
-  color: "black",
+  color: 'black',
   fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 20,
   fontWeight: 100,
   lineHeight: 2,
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 30 },
+  [CustomTheme.breakpoints.up('md')]: { fontSize: 30 },
 };
 
 CustomTheme.typography.Noto2 = {
-  color: "black",
+  color: 'black',
   fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 12,
   fontWeight: 100,
-  lineHeight: "20px",
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 15, lineHeight: "27px" },
+  lineHeight: '20px',
+  [CustomTheme.breakpoints.up('md')]: { fontSize: 15, lineHeight: '27px' },
 };
 
 CustomTheme.typography.Noto3 = {
-  color: "black",
+  color: 'black',
   fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 11,
   fontWeight: 100,
-  lineHeight: "20px",
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 13, lineHeight: "25px" },
+  lineHeight: '20px',
+  [CustomTheme.breakpoints.up('md')]: { fontSize: 13, lineHeight: '25px' },
 };
 
 export default CustomTheme;

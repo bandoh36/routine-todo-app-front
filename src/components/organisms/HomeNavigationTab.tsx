@@ -1,7 +1,7 @@
-import { SyntheticEvent } from "react";
+import { SyntheticEvent } from 'react';
 
-import HomeTab from "@/components/molecules/HomeTab";
-import HomeTabs from "@/components/molecules/HomeTabs";
+import HomeTab from '@/components/molecules/HomeTab';
+import HomeTabs from '@/components/molecules/HomeTabs';
 
 export interface HomeNavigationTabProps {
   tabValue: number;
